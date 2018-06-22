@@ -98,6 +98,13 @@ public class DeviceListActivity extends Activity implements DevicesAdapter.OnExp
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.device_list);
 
+        ((TextView)findViewById(R.id.toolbar_title)).setText("电子面单打印");
+        findViewById(R.id.iv_toolbar_imageview_left).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         // Set result CANCELED incase the user backs out
         setResult(Activity.RESULT_CANCELED);
         gtExpressBean = (GTExpressBean) getIntent().getSerializableExtra("gtExpressBean");

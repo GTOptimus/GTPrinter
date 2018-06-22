@@ -8,7 +8,9 @@
         android:id="@+id/tv_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:background="@color/green_5adad0"
+        android:text="打印"
+        android:layout_gravity="center"
         android:padding="20dp"/>
 
 </LinearLayout>

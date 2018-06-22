@@ -11,5 +11,22 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-
+    <!-- Base application theme. -->
+    <style name="AppThemeParent" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/holo_red_light</item>
+        <!--toolbar内的控件（自定义的或者系统预置的如标题）距离NavigationIcon和屏幕左边的距离，类似marginStart-->
+        <item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+        <!--NavigationIcon的宽度-->
+        <item name="toolbarStyle">@style/mToolbarStyle</item>
+    </style>
+    <style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="mToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
 </resources>
